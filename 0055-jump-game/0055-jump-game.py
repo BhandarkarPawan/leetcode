@@ -11,7 +11,7 @@ class Solution:
             for j in range(i+nums[i], i, -1):
                 if canFinish[j]:
                     canFinish[i] = True 
-                    continue 
+                    break 
         
         return canFinish[0]
 
